@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Hendrik Otita | Odoo Developer</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&family=Material+Icons+Outlined&display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0f172a",
+                        accent: "#10b981",
+                        "background-light": "#f8fafc",
+                        "background-dark": "#020617",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        display: ["Outfit", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        "xl": "1rem",
+                    },
+                },
+            },
+        };
+    </script>
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 selection:bg-accent/30 font-sans transition-colors duration-300">
+    
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <span class="nav-logo">Hendrik Otita</span>
+            
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" onclick="document.documentElement.classList.toggle('dark')">
+                    <span class="material-icons-outlined text-[20px] block dark:hidden">dark_mode</span>
+                    <span class="material-icons-outlined text-[20px] hidden dark:block">light_mode</span>
+                </button>
+                <a class="btn-contact" href="mailto:hendrikrikuto@gmail.com">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20">
+        
+        <!-- Hero/About Section -->
+        <section class="section-container" id="about">
+            <div class="hero-content">
+                <h2 class="hero-subtitle">Odoo Developer & Computer Science Graduate</h2>
+                <h1 class="hero-title">Hendrik Otita</h1>
+                <p class="hero-description">
+                    Bachelor of Computer Science graduate from BINUS University with a strong focus on 
+                    <span class="text-highlight">ODOO ERP systems</span>. 
+                    Experienced in developing and customizing business applications to improve operational 
+                    efficiency. Passionate about delivering scalable, business-oriented solutions while 
+                    continuously expanding technical and problem-solving skills.
+                </p>
+
+                
+                <div class="hero-info">
+                    <a class="info-link" href="https://www.linkedin.com/in/hendrik-otita-146644272" target="_blank">
+                        <span class="material-icons-outlined">link</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <span class="info-divider">|</span>
+                    <div class="info-item">
+                        <span class="material-icons-outlined">phone</span>
+                        <span>+6281563798564</span>
+                    </div>
+                    <span class="info-divider">|</span>
+                    <div class="info-item">
+                        <span class="material-icons-outlined">location_on</span>
+                        <span>Jakarta, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section-container" id="experience">
+            <div class="section-header">
+                <h2 class="section-title">Professional Journey</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="timeline">
+
+                <!-- Experience Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker active"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Odoo Developer</h3>
+                                <p class="timeline-company">PT Maju Express Indonesia</p>
+                            </div>
+                            <span class="badge badge-active">Sept 2025 - March 2026</span>
+                        </div>
+                        <p class="timeline-description">
+                            Contributed to the development and customization of Odoo ERP solutions for a mobile phone 
+                            distribution company, supporting end-to-end business processes across Sales, Accounting, 
+                            and Inventory modules. Entrusted with managing and integrating retail business operations 
+                            through API-based solutions to ensure seamless data flow, operational efficiency, and 
+                            system reliability.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Freelance Odoo Developer</h3>
+                                <p class="timeline-company">PT WIR ASIA Tbk</p>
+                            </div>
+                            <span class="badge">Feb 2025 - Aug 2025</span>
+                        </div>
+                        <p class="timeline-description">
+                            Developing and maintaining Odoo applications with a focus on cross-functional 
+                            collaboration and system performance optimization. Strengthened ability to meet 
+                            tight deadlines while ensuring high code quality.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Odoo Developer Internship</h3>
+                                <p class="timeline-company">PT WIR ASIA Tbk</p>
+                            </div>
+                            <span class="badge">Feb 2024 - Feb 2025</span>
+                        </div>
+                        <p class="timeline-description">
+                            Transitioned from an intensive 5-month training program to full project work. 
+                            Actively participated in the SDLC, from requirements analysis to deployment. 
+                            Specialized in business process automation and Odoo architecture.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Part-time Tutor & Admin</h3>
+                                <p class="timeline-company">Bimbel Abigail</p>
+                            </div>
+                            <span class="badge">May 2021 - Dec 2022</span>
+                        </div>
+                        <p class="timeline-description">
+                            Balanced educational and administrative responsibilities. Taught fundamental 
+                            arithmetic to primary students while overseeing administrative operations to 
+                            ensure seamless facility functioning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications -->
+        <section class="section-container">
+            <div class="grid md:grid-cols-2 gap-16">
+                <!-- Education -->
+                <div>
+                    <div class="section-header mb-8">
+                        <h2 class="section-title-small">Education</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    
+                    <div class="space-y-8">
+                        <div class="card">
+                            <h4 class="card-title">Universitas Bina Nusantara</h4>
+                            <p class="card-subtitle">Aug 2021 - Des 2025</p>
+                            <p class="card-text">Bachelor's Degree in Computer Science</p>
+                            <p class="card-meta">GPA: 3.01 / 4.00</p>
+                        </div>
+                        
+                        <div class="card">
+                            <h4 class="card-title">SMAK 3 BPK Penabur Bandung</h4>
+                            <p class="card-meta">Feb 2018 - Nov 2021</p>
+                            <p class="card-text">Science Stream</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div>
+                    <div class="section-header mb-8">
+                        <h2 class="section-title-small">Certifications</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="cert-item">
+                            <div class="cert-content">
+                                <span class="material-icons-outlined text-accent">verified</span>
+                                <span class="font-medium">Python (Basic)</span>
+                            </div>
+                            <span class="cert-source">HackerRank</span>
+                        </div>
+                        
+                        <div class="cert-item">
+                            <div class="cert-content">
+                                <span class="material-icons-outlined text-accent">verified</span>
+                                <span class="font-medium">JavaScript (Basic)</span>
+                            </div>
+                            <span class="cert-source">HackerRank</span>
+                        </div>
+                        
+                        <div class="cert-item">
+                            <div class="cert-content">
+                                <span class="material-icons-outlined text-accent">verified</span>
+                                <span class="font-medium">SQL (Intermediate)</span>
+                            </div>
+                            <span class="cert-source">HackerRank</span>
+                        </div>
+                        
+                        <div class="cert-item">
+                            <div class="cert-content">
+                                <span class="material-icons-outlined text-accent">verified</span>
+                                <span class="font-medium">Problem Solving</span>
+                            </div>
+                            <span class="cert-source">HackerRank</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section-container" id="skills">
+            <div class="skills-card">
+                <div class="skills-bg-icon">
+                    <span class="material-icons-outlined">code</span>
+                </div>
+                
+                <div class="skills-content">
+                    <h2 class="skills-title">Technical & Soft Skills</h2>
+                    <div class="skills-grid">
+                        <span class="skill-tag skill-featured">Problem Solving</span>
+                        <span class="skill-tag skill-featured">Odoo ERP Development</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">XML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">ERP Systems</span>
+                        <span class="skill-tag">Canva</span>
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag skill-featured">English</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engagement Section -->
+        <section class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Engagement</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="engagement-card">
+                    <div class="engagement-icon">
+                        <span class="material-icons-outlined">groups</span>
+                    </div>
+                    <h3 class="engagement-title">Binus Computer Club</h3>
+                    <p class="engagement-description">
+                        Regular participant in technology seminars and professional development workshops.
+                    </p>
+                </div>
+                
+                <div class="engagement-card">
+                    <div class="engagement-icon">
+                        <span class="material-icons-outlined">videogame_asset</span>
+                    </div>
+                    <h3 class="engagement-title">Binus Game Developer Club</h3>
+                    <p class="engagement-description">
+                        Engaged in game creation studies using Java and character design conceptualization.
+                    </p>
+                </div>
+                
+                <div class="engagement-card">
+                    <div class="engagement-icon">
+                        <span class="material-icons-outlined">volunteer_activism</span>
+                    </div>
+                    <h3 class="engagement-title">Teach For Indonesia</h3>
+                    <p class="engagement-description">
+                        Volunteer for social service initiatives, providing community health check-ups and support.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <p class="footer-name">Hendrik Otita</p>
+                <p class="footer-tagline">Built with passion & precision.</p>
+            </div>
+            
+            <div class="footer-social">
+                <a class="social-icon" href="mailto:hendrikrikuto@gmail.com">
+                    <span class="material-icons-outlined text-sm">alternate_email</span>
+                </a>
+                <a class="social-icon" href="https://www.linkedin.com/in/hendrik-otita-146644272" target="_blank">
+                    <span class="material-icons-outlined text-sm">share</span>
+                </a>
+            </div>
+            
+            <p class="footer-copyright">© 2025 Hendrik Otita. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
