@@ -122,7 +122,11 @@ body {
 .section-container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 6rem 1.5rem;
+    padding: 4rem 1.5rem;
+}
+
+.section-container:first-of-type {
+    padding-top: 2rem;
 }
 
 .section-header {
@@ -172,7 +176,8 @@ body {
 .hero-subtitle {
     color: #10b981;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
     font-size: 1.125rem;
 }
 
@@ -1070,4 +1075,237 @@ body {
 
 .project-placeholder .project-summary {
     font-style: italic;
+}
+
+/* ===================================
+   PROFILE PHOTO SECTION - UPDATED
+   =================================== */
+
+.profile-photo-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Container tetap lebar untuk gallery */
+    margin: 0 auto 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main Photo (Large, on top) */
+.main-photo-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 300px; /* Main photo dibatasi 300px */
+    margin-bottom: 1rem;
+}
+
+.main-photo {
+    width: 100%;
+    height: 320px;
+    border-radius: 1rem;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.dark .main-photo {
+    border-color: #1e293b;
+}
+
+.main-photo-label {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(16, 185, 129, 0.95);
+    color: white;
+    padding: 0.625rem 1.5rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.dark .main-photo-label {
+    background: rgba(16, 185, 129, 0.9);
+}
+
+/* Photo Gallery (Small photos below) */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%; /* Gallery tetap full width dari container */
+    max-width: 600px; /* Gallery bisa sampai 600px */
+}
+
+.gallery-photo-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-photo-wrapper:hover {
+    transform: scale(1.15) translateY(-8px);
+    z-index: 10;
+}
+
+.gallery-photo {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    border: 3px solid white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.dark .gallery-photo {
+    border-color: #1e293b;
+}
+
+.gallery-photo-wrapper:hover .gallery-photo {
+    border-color: #10b981;
+    box-shadow: 0 15px 35px rgba(16, 185, 129, 0.4);
+}
+
+.gallery-label {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(16, 185, 129, 0.95);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.dark .gallery-label {
+    background: rgba(16, 185, 129, 0.9);
+}
+
+.gallery-photo-wrapper:hover .gallery-label {
+    opacity: 1;
+    bottom: 0.75rem;
+}
+
+/* Responsive */
+/* Responsive */
+@media (max-width: 768px) {
+    .main-photo {
+        height: 280px;
+    }
+    
+    .photo-gallery {
+        gap: 0.75rem;
+    }
+    
+    .gallery-photo {
+        height: 110px;
+    }
+}
+
+@media (max-width: 640px) {
+    .main-photo {
+        height: 240px;
+    }
+    
+    .photo-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .gallery-photo {
+        height: 90px;
+    }
+    
+    .gallery-photo-wrapper:hover {
+        transform: scale(1.1) translateY(-4px);
+    }
+}
+
+/* CV Button */
+
+.btn-cv {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #10b981;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+    text-decoration: none;
+}
+
+.btn-cv:hover {
+    background-color: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+.btn-cv:active {
+    transform: translateY(-1px);
+}
+
+/* Certificate Links */
+.cert-link {
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+}
+
+.cert-link:hover {
+    transform: translateX(8px) scale(1.02);
+    border-color: #10b981;
+}
+
+.dark .cert-link:hover {
+    border-color: #10b981;
+}
+
+.cert-link:active {
+    transform: translateX(4px) scale(1.01);
+}
+
+/* Add subtle icon rotation on certificate hover */
+.cert-link:hover .material-icons-outlined {
+    transform: rotate(360deg);
+    transition: transform 0.6s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .btn-cv {
+        padding: 0.5rem 0.875rem;
+        font-size: 0.8rem;
+    }
+    
+    .btn-cv span:last-child {
+        display: none;
+    }
+    
+    .profile-photo-container {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 640px) {
+    .nav-actions {
+        gap: 0.5rem;
+    }
 }

@@ -59,6 +59,11 @@
                     <span class="material-icons-outlined text-[20px] block dark:hidden">dark_mode</span>
                     <span class="material-icons-outlined text-[20px] hidden dark:block">light_mode</span>
                 </button>
+                <!-- Download CV Button -->
+                <a class="btn-cv" href="cv.pdf" download="Hendrik_Otita_CV.pdf">
+                    <span class="material-icons-outlined text-[18px]">download</span>
+                    <span>Download CV</span>
+                </a>
                 <a class="btn-contact" href="mailto:hendrikrikuto@gmail.com">Contact</a>
             </div>
         </div>
@@ -69,6 +74,47 @@
         <!-- Hero/About Section -->
         <section class="section-container" id="about">
             <div class="hero-content">
+                <!-- Profile Photo Section -->
+                <div class="profile-photo-container">
+                    <!-- Main Formal Photo -->
+                    <div class="main-photo-wrapper">
+                        <img 
+                            src="./img/main.jpg"
+                            alt="Hendrik Otita - Professional"
+                            class="main-photo"
+                            onerror="this.src='https://ui-avatars.com/api/?name=Hendrik+Otita&size=500&background=10b981&color=fff&bold=true'"
+                        >
+                    </div>
+
+                    
+                    <!-- Other Photos Gallery -->
+                    <div class="photo-gallery">
+                        <div class="gallery-photo-wrapper">
+                            <img 
+                                src="./img/jempol.jpg" 
+                                alt="Hendrik at Office"
+                                class="gallery-photo" 
+                                onerror="this.src='https://ui-avatars.com/api/?name=Office&size=200&background=059669&color=fff'">
+                        </div>
+                        
+                        <div class="gallery-photo-wrapper">
+                            <img 
+                                src="./img/2.jpeg" 
+                                alt="Hendrik with Team" 
+                                class="gallery-photo" 
+                                onerror="this.src='https://ui-avatars.com/api/?name=Team&size=200&background=0ea5e9&color=fff'">
+                        </div>
+                        
+                        <div class="gallery-photo-wrapper">
+                            <img 
+                                src="./img/3.jpeg" 
+                                alt="Hendrik - Casual" 
+                                class="gallery-photo" 
+                                onerror="this.src='https://ui-avatars.com/api/?name=Casual&size=200&background=8b5cf6&color=fff'">
+                        </div>
+                    </div>
+                </div>
+                
                 <h2 class="hero-subtitle">Odoo Developer & Computer Science Graduate</h2>
                 <h1 class="hero-title">Hendrik Otita</h1>
                 <p class="hero-description">
@@ -308,37 +354,53 @@
                     </div>
                     
                     <div class="space-y-3">
-                        <div class="cert-item">
+                        <a href="https://www.hackerrank.com/certificates/5f7793de8276" target="_blank" class="cert-item cert-link">
                             <div class="cert-content">
                                 <span class="material-icons-outlined text-accent">verified</span>
                                 <span class="font-medium">Python (Basic)</span>
                             </div>
                             <span class="cert-source">HackerRank</span>
-                        </div>
+                        </a>
                         
-                        <div class="cert-item">
+                        <a href="https://www.hackerrank.com/certificates/bd766a7f796b" target="_blank" class="cert-item cert-link">
                             <div class="cert-content">
                                 <span class="material-icons-outlined text-accent">verified</span>
                                 <span class="font-medium">JavaScript (Basic)</span>
                             </div>
                             <span class="cert-source">HackerRank</span>
-                        </div>
+                        </a>
                         
-                        <div class="cert-item">
+                        <a href="https://www.hackerrank.com/certificates/1e42a10feb47" target="_blank" class="cert-item cert-link">
                             <div class="cert-content">
                                 <span class="material-icons-outlined text-accent">verified</span>
                                 <span class="font-medium">SQL (Intermediate)</span>
                             </div>
                             <span class="cert-source">HackerRank</span>
-                        </div>
+                        </a>
                         
-                        <div class="cert-item">
+                        <a href="https://www.hackerrank.com/certificates/4ce321f86072" target="_blank" class="cert-item cert-link">
                             <div class="cert-content">
                                 <span class="material-icons-outlined text-accent">verified</span>
-                                <span class="font-medium">Problem Solving</span>
+                                <span class="font-medium">SQL (Basic)</span>
                             </div>
                             <span class="cert-source">HackerRank</span>
-                        </div>
+                        </a>
+                        
+                        <a href="https://www.hackerrank.com/certificates/303cbe9aafd8" target="_blank" class="cert-item cert-link">
+                            <div class="cert-content">
+                                <span class="material-icons-outlined text-accent">verified</span>
+                                <span class="font-medium">Problem Solving (Basic)</span>
+                            </div>
+                            <span class="cert-source">HackerRank</span>
+                        </a>
+                        
+                        <a href="https://www.coursera.org/account/accomplishments/certificate/4T5EQCE4EQFQ" target="_blank" class="cert-item cert-link">
+                            <div class="cert-content">
+                                <span class="material-icons-outlined text-accent">verified</span>
+                                <span class="font-medium">Foundations: Data, Data, Everywhere</span>
+                            </div>
+                            <span class="cert-source">Coursera</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -428,6 +490,12 @@
                 <a class="social-icon" href="https://www.linkedin.com/in/hendrik-otita-146644272" target="_blank">
                     <span class="material-icons-outlined text-sm">share</span>
                 </a>
+                <a class="social-icon"
+                href="./cv/Hendrik_Otita_CV_Updated.pdf"
+                download="Hendrik_Otita_CV.pdf">
+                    <span class="material-icons-outlined text-sm">description</span>
+                </a>
+
             </div>
             
             <p class="footer-copyright">© 2025 Hendrik Otita. All rights reserved.</p>
